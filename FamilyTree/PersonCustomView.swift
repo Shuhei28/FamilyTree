@@ -1,5 +1,5 @@
-//
-//  PersionCustomView.swift
+///Users/itoshuhei/Project/Swift/FamilyTree/FamilyTree/Person.swift
+//  PersonCustomView.swift
 //  test
 //
 //  Created by 伊藤修平 on 2017/10/06.
@@ -8,8 +8,12 @@
 
 import UIKit
 
-class PersionCustomView: UIView {
+class PersonCustomView: UIView {
 
+
+  @IBOutlet weak var familyName: UILabel!
+  @IBOutlet weak var givenName: UILabel!
+  
   override init(frame: CGRect){
     super.init(frame: frame)
     loadNib()
@@ -25,6 +29,5 @@ class PersionCustomView: UIView {
     view.frame = self.bounds
     self.addSubview(view)
   }
-  //  親要素である ScrollView のheight を増やす
-  //  新たな要素をScrollView.addSubview する
 }
+

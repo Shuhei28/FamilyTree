@@ -8,6 +8,8 @@
 
 import UIKit
 
+let persons = [Person]()
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
